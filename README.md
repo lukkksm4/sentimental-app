@@ -310,7 +310,7 @@ Este fluxograma mostra como navegar pelo website, autenticação, e rotas restri
 
 [Acessar Documentação da API](https://documenter.getpostman.com/view/24491479/2s9YC1Xv31)
 
-Os seguintes testes foram performados
+Os seguintes testes foram executados:
 
 1.  **Registro de Usuário**:  Checa se o registro foi válido, espera token na resposta
 2.  **Acesso de Usuário**: Verifica se o foi logado com sucesso, espera token na resposta
@@ -421,7 +421,7 @@ Pelo propósito deste projeto eu estou usando uma implementação simples com ar
 ## Hospedagem AWS
 
 - Estou usando AWS para a hospedagem do website, uma configuração simples onde os arquivos estáticos do front-end estão armazenados em um S3 bucket, o qual contém uma funcionalidade para hospedagem de Single-Page Web Applications.
-- O back-end está implementado em ECS, um serviço para a gestão de containers, e usei Docker para criar o container da aplicação para e rodar no servidor.
+- O back-end está implementado em ECS, um serviço para a gestão de containers, usei Docker para criar o container da aplicação para rodar no servidor.
 
 ## Hospedagem do Banco de Dados
 - [MongoDB Atlas](https://www.mongodb.com/atlas/database), um banco de dados on-line gerenciado que oferece fácil implementação e escalabilidade, eu configurei a comunicação com o pacote [mongoose](https://mongoosejs.com/) para Node.js.
