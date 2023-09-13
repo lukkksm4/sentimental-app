@@ -67,7 +67,8 @@ O back-end foi feito em Node e Express, assim como algumas outras bibliotecas pa
 
 ## Interface de Programação (API)
 
-Eu usei uma API REST com arquitetura Cliente-Servidor, que pode então ser acessado por diferentes meios além do navegador. O token de sessão pode ser armazenado em um cookie ou mandar de volta para o servidor via   The session token can be stored in a cookie and send back to the server via header **Authorization** na solicitação.
+Eu usei uma API REST com arquitetura Cliente-Servidor, que pode então ser acessado por diferentes meios além do navegador. O token de sessão pode ser armazenado em um cookie ou mandar de volta para o servidor via header **Authorization** na solicitação.
+
 [Acessar Documentação da API](https://documenter.getpostman.com/view/24491479/2s9YC1Xv31)
 
 **Rotas e Métodos HTTP**
@@ -146,8 +147,8 @@ A coleção **User** armazena dados e credenciais relacionadas ao usuário:
 	  name 				varchar(20) 
 	  about 			text
 	  photo 			image/base64
-	  created_at 		timestamp
-	  updated_at 		timestamp
+	  created_at 			timestamp
+	  updated_at 			timestamp
 	}
 Imagens de perfil são carregadas com [multer](https://github.com/expressjs/multer), redimensionadas com [sharp](https://github.com/lovell/sharp), e então armazenadas no formato base64.
 
@@ -157,10 +158,10 @@ A coleção **Post** armazena conteúdo de texto, e os ids de curtidas e coment�
 	  id 				integer [primary key]
 	  user_id 			integer
 	  content 			text
-	  sentiment 		value ['Positive', 'Negative', 'Neutral']
+	  sentiment 			value ['Positive', 'Negative', 'Neutral']
 	  like_ids 			list [integer]
-	  comment_ids 		list [integer]
-	  created_at 		timestamp
+	  comment_ids 			list [integer]
+	  created_at 			timestamp
 	}
 
 A coleção **Comment** também armazena conteúdo de texto, com referência de sua postagem e usuário:
@@ -170,22 +171,22 @@ A coleção **Comment** também armazena conteúdo de texto, com referência de 
 	  user_id			integer
 	  post_id			integer
 	  content			text
-	  created_at		timestamp 
+	  created_at			timestamp 
 	}
 
-Ambas **Follow** e **Like** são usadas como tabelas de referência. A coleção **Follow** associa o usuário atual com à quem ele está seguindo, e a coleção **Like** associa uma postagem ao usuário atual:
+Ambas **Follow** e **Like** são usadas como tabelas de referência. A coleção **Follow** associa o usuário atual à quem ele está seguindo, e a coleção **Like** associa uma postagem ao usuário atual:
 
 
 	Table Like {
 	  user_id 			integer
 	  post_id 			integer 
-	  created_at 		timestamp 
+	  created_at 			timestamp 
 	}
 
 	Table Follow {
-	  follower_id 		integer 
-	  followed_id 		integer
-	  created_at 		timestamp 
+	  follower_id 			integer 
+	  followed_id 			integer
+	  created_at 			timestamp 
 	}
 
 
@@ -420,7 +421,7 @@ Pelo propósito deste projeto eu estou usando uma implementação simples com ar
 ## Hospedagem AWS
 
 - Estou usando AWS para a hospedagem do website, uma configuração simples onde os arquivos estáticos do front-end estão armazenados em um S3 bucket, o qual contém uma funcionalidade para hospedagem de Single-Page Web Applications.
-- O back-end está implementado em ECS, um serviço para a gestão de containers, e usei Docker para criar o container da aplicação para rodar no servidor.
+- O back-end está implementado em ECS, um serviço para a gestão de containers, e usei Docker para criar o container da aplicação para e rodar no servidor.
 
 ## Hospedagem do Banco de Dados
 - [MongoDB Atlas](https://www.mongodb.com/atlas/database), um banco de dados on-line gerenciado que oferece fácil implementação e escalabilidade, eu configurei a comunicação com o pacote [mongoose](https://mongoosejs.com/) para Node.js.
@@ -510,6 +511,7 @@ The back-end was built with Node and Express, as well as some other libraries to
 ## API
 
 I used a REST API with Client-Server architecture, so that it can be accessed by different means besides the browser. The session token can be stored in a cookie and send back to the server via the **Authorization** header in the request.
+
 [Access API Documentation](https://documenter.getpostman.com/view/24491479/2s9YC1Xv31)
 
 **Routes and HTTP Methods**
@@ -584,8 +586,8 @@ The **User** collection stores user-related data and credentials:
 	  name 				varchar(20) 
 	  about 			text
 	  photo 			image/base64
-	  created_at 		timestamp
-	  updated_at 		timestamp
+	  created_at 			timestamp
+	  updated_at 			timestamp
 	}
 Profile images are uploaded with [multer](https://github.com/expressjs/multer), resized with [sharp](https://github.com/lovell/sharp), and then stored in base64 format.
 
@@ -595,10 +597,10 @@ The **Post** collection stores text content, and the likes and comments ids asso
 	  id 				integer [primary key]
 	  user_id 			integer
 	  content 			text
-	  sentiment 		value ['Positive', 'Negative', 'Neutral']
+	  sentiment 			value ['Positive', 'Negative', 'Neutral']
 	  like_ids 			list [integer]
-	  comment_ids 		list [integer]
-	  created_at 		timestamp
+	  comment_ids 			list [integer]
+	  created_at 			timestamp
 	}
 
 The **Comment** collection also stores text content, with a reference for its post and user:
@@ -608,7 +610,7 @@ The **Comment** collection also stores text content, with a reference for its po
 	  user_id			integer
 	  post_id			integer
 	  content			text
-	  created_at		timestamp 
+	  created_at			timestamp 
 	}
 
 Both **Follow** and **Like** are used as referencing tables. The **Follow** collection associates the current user with who the user is following, and the **Like** collection associates a post with the current user:
@@ -617,13 +619,13 @@ Both **Follow** and **Like** are used as referencing tables. The **Follow** coll
 	Table Like {
 	  user_id 			integer
 	  post_id 			integer 
-	  created_at 		timestamp 
+	  created_at 			timestamp 
 	}
 
 	Table Follow {
-	  follower_id 		integer 
-	  followed_id 		integer
-	  created_at 		timestamp 
+	  follower_id 			integer 
+	  followed_id 			integer
+	  created_at 			timestamp 
 	}
 
 
@@ -884,5 +886,3 @@ The image shows a solution using **Microservices Architecture** and **Serverless
 ---
 
 Credits: [lukkks.m4](https://github.com/lukkksm4)
-
----
