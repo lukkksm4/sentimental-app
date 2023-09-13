@@ -15,23 +15,23 @@ Possui **Autenticação**, **Modelagem de Dados**, **operações CRUD**, **Segur
 ### Summary
 - [Principais Ferramentas](#principais-ferramentas)
 - [Desenvolvimento Back-End](#desenvolvimento-back-end)
--- [Interface de Programação (API)](#interface-de-programação-api)
--- [Autenticação de Usuário](#autenticação-de-usuário)
--- [Medidas de Segurança](#medidas-de-segurança)
--- [Gestão de Erros](#gestão-de-erros)
--- [Modelagem de Dados](#modelagem-de-dados)
--- [Análise de Sentimentos](#análise-de-sentimentos)
+	- [Interface de Programação (API)](#interface-de-programação-api)
+	- [Autenticação de Usuário](#autenticação-de-usuário)
+	- [Medidas de Segurança](#medidas-de-segurança)
+	- [Gestão de Erros](#gestão-de-erros)
+	- [Modelagem de Dados](#modelagem-de-dados)
+	- [Análise de Sentimentos](#análise-de-sentimentos)
 - [Desenvolvimento Front-End](#desenvolvimento-front-end)
--- [Funcionalidades](#funcionalidades)
--- [Páginas](#páginas)
--- [Fluxograma](#fluxograma-website)
--- [Capturas de Tela](#capturas)
+	- [Funcionalidades](#funcionalidades)
+	- [Páginas](#páginas)
+	- [Fluxograma](#fluxograma-website)
+	- [Capturas de Tela](#capturas)
 - [Testando](#testando)
--- [Testes API](#testes-api)
+	- [Testes API](#testes-api)
 - [Implementação](#implementação)
--- [Hospedagem AWS](#hospedagem-aws)
--- [Hospedagem do Banco de Dados](#hospedagem-do-banco-de-dados)
--- [Microserviços](#arquitetura-de-microserviços-não-implementado)
+	- [Hospedagem AWS](#hospedagem-aws)
+	- [Hospedagem do Banco de Dados](#hospedagem-do-banco-de-dados)
+	- [Microserviços](#arquitetura-de-microserviços-não-implementado)
 
 
 # Principais Ferramentas
@@ -57,10 +57,10 @@ O back-end foi feito em Node e Express, assim como algumas outras bibliotecas pa
 **Estrutura de Arquivos** (Back-end)
 ![backend_flowchart](https://raw.githubusercontent.com/lukkksm4/sentimental-app/main/resources/Flowcharts/backend_flowchart.png)
 
-- **Main** :
--- **server**: inicia o servidor e conecta com o banco de dados
--- **app**: middlewares para várias funções
--- **router**: roteia endpoints para funções no controller 
+- **Main**:
+	- **server**: inicia o servidor e conecta com o banco de dados
+	- **app**: middlewares para várias funções
+	- **router**: roteia endpoints para funções no controller 
 - **Controller**: consulta e gerencia o banco de dados
 - **Model**: schema para coleções do banco de dados
 - **Util**: utilidades para o aplicativo
@@ -457,23 +457,23 @@ It features **Authentication**, **Data Modeling**, **CRUD operations**, **Securi
 ### Summary
 - [Main Tools and Frameworks](#main-tools-and-frameworks)
 - [Back-End Development](#back-end-developent)
--- [API](#api)
--- [User Authentication](#user-authentication)
--- [Security Measures](#security-measures)
--- [Error Handling](#error-handling)
--- [Data Modeling](#data-modeling)
--- [Sentiment Analysis](#sentiment-analysis)
+	- [API](#api)
+	- [User Authentication](#user-authentication)
+	- [Security Measures](#security-measures)
+	- [Error Handling](#error-handling)
+	- [Data Modeling](#data-modeling)
+	- [Sentiment Analysis](#sentiment-analysis)
 - [Front-End Development](#front-end-development)
--- [Features](#features)
--- [Pages](#pages)
--- [Flowchart](#flowchart-website)
--- [Screenshots](#screenshots)
+	- [Features](#features)
+	- [Pages](#pages)
+	- [Flowchart](#flowchart-website)
+	- [Screenshots](#screenshots)
 - [Testing](#testing)
--- [API Tests](#api-tests)
+	- [API Tests](#api-tests)
 - [Deployment](#deployment)
--- [AWS Hosting](#aws-hosting)
--- [Database Hosting](#database-hosting)
--- [Microservices](#microservices-architecture-not-implemented)
+	- [AWS Hosting](#aws-hosting)
+	- [Database Hosting](#database-hosting)
+	- [Microservices](#microservices-architecture-not-implemented)
 
 
 # Main Tools and Frameworks
@@ -499,10 +499,10 @@ The back-end was built with Node and Express, as well as some other libraries to
 **File Structure** (Back-end)
 ![backend_flowchart](https://raw.githubusercontent.com/lukkksm4/sentimental-app/main/resources/Flowcharts/backend_flowchart.png)
 
-- **Main** :
--- **server**: starts server and connects to database
--- **app**: middlewares for various features
--- **router**: routes endpoints to functions in the controller 
+- **Main**:
+	- **server**: starts server and connects to database
+	- **app**: middlewares for various features
+	- **router**: routes endpoints to functions in the controller 
 - **Controller**: query and manage DB
 - **Model**: schema for DB collections
 - **Util**: utilities for the app
