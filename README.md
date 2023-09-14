@@ -481,7 +481,7 @@ It features **Authentication**, **Data Modeling**, **CRUD operations**, **Securi
 
 -   Built using **Node.js**, **Express**, **React**, **MongoDB**, **AWS**
 
--   It uses **Node.js** with **Express** framework to implement the ** API routes** and **authentication**
+-   It uses **Node.js** with **Express** framework to implement the **API routes** and **authentication**
 
 -   The front-end is built with **React**, with a simple and clean interface
 
