@@ -7,12 +7,12 @@ Simples **Aplicativo de Mídias Sociais**, baseado em texto, que usa análise de
 
  ### **[SentimentalApp Website](http://sentimental-app-ehfoseuifheh.s3-website-sa-east-1.amazonaws.com/)**
 
-Este é um projeto **Full Stack**, **Aplicação Web** e  com **API RESTful**,  para fins de demonstração apenas.
+Este é um projeto **Full Stack**, **Aplicação Web** e com **API RESTful**, apenas para fins de demonstração.
 Possui **Autenticação**, **Modelagem de Dados**, **operações CRUD**, **Segurança**, **Desenvolvimento de API**, **Teste de API**, **Implementação na Nuvem** e **Experiência de Usuário**.
 
 ---
 
-### Summary
+### Sumário
 - [Principais Ferramentas](#principais-ferramentas)
 - [Desenvolvimento Back-End](#desenvolvimento-back-end)
 	- [Interface de Programação (API)](#interface-de-programação-api)
