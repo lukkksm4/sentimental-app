@@ -3,7 +3,7 @@
 
 # Sentimental Social Media App (Português-BR)
 
-Simples **Aplicativo de Mídias Sociais**, baseado em texto, que usa análise de sentimentos para identificar a emoção de uma postagem e mudar sua cor. 
+Simples **Aplicativo de Rede Social**, baseado em texto, que usa análise de sentimentos para identificar a emoção de uma postagem e mudar sua cor. 
 
  ### **[SentimentalApp Website](http://sentimental-app-ehfoseuifheh.s3-website-sa-east-1.amazonaws.com/)**
 
@@ -444,7 +444,7 @@ A imagem mostra uma solução utilizado **Arquitetura de Microserviços** e **AW
 
 # Sentimental Social Media App (English)
 
-Simple text-based **Social Media App**, that uses emotion-based sentiment analysis to identify the mood of a post and change its color.
+Simple text-based **Social Network App**, that uses emotion-based sentiment analysis to identify the mood of a post and change its color.
 
  ### **[SentimentalApp Website](http://sentimental-app-ehfoseuifheh.s3-website-sa-east-1.amazonaws.com/)**
 
